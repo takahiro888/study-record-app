@@ -26,7 +26,7 @@ cd study-record-app
 2. 依存関係のインストール
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 3. 開発サーバーの起動
