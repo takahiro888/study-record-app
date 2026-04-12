@@ -3,26 +3,26 @@ import "./styles.css";
 
 export const StudyLogList = () => {
   const [records, setRecords] = useState([]);
-  const [studyTittle, setStudyTittle] = useState("");
+  const [studyTitle, setStudyTitle] = useState("");
   const [studyTime, setStudyTime] = useState(0);
   const [error, setError] = useState("");
 
-  const onChangeTittle = (event) => setStudyTittle(event.target.value);
+  const onChangeTitle = (event) => setStudyTitle(event.target.value);
   const onChangeTime = (event) => setStudyTime(event.target.value);
 
   const onClickAdd = () => {
-    if (studyTittle === "" || studyTime === "" || studyTime === 0) {
+    if (studyTitle === "" || studyTime === "" || studyTime === 0) {
       setError("入力されていない項目があります");
       return;
     }
 
     const newRecord = {
-      title: studyTittle,
+      title: studyTitle,
       time: Number(studyTime),
     };
     const newRecords = [...records, newRecord];
     setRecords(newRecords);
-    setStudyTittle("");
+    setStudyTitle("");
     setStudyTime(0);
   };
 
@@ -36,7 +36,7 @@ export const StudyLogList = () => {
         <h1>学習記録一覧</h1>
         <div>
           <p>◾️学習内容</p>
-          <input value={studyTittle} onChange={onChangeTittle} />
+          <input value={studyTitle} onChange={onChangeTitle} />
         </div>
         <div>
           <p>◾️学習記録</p>
@@ -44,7 +44,7 @@ export const StudyLogList = () => {
           時間
         </div>
         <div>
-          <p>入力されている学習内容:{studyTittle}</p>
+          <p>入力されている学習内容:{studyTitle}</p>
           <p>入力されている時間:{studyTime}時間</p>
         </div>
         {records.map((record, index) => (
