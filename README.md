@@ -17,17 +17,20 @@ Reactで作成したシンプルな学習記録管理アプリケーションで
 ## セットアップ
 
 1. リポジトリをクローン
+
 ```bash
 git clone <your-repository-url>
 cd study-record-app
 ```
 
 2. 依存関係のインストール
+
 ```bash
 npm install
 ```
 
 3. 開発サーバーの起動
+
 ```bash
 npm start
 ```
@@ -50,7 +53,7 @@ npm start
 ## スクリプト
 
 - `npm start` - 開発サーバーを起動
-- `npm build` - 本番用ビルドを作成
+- `npm run build` - 本番用ビルドを作成
 - `npm test` - テストを実行
 - `npm eject` - Create React Appの設定を展開
 
