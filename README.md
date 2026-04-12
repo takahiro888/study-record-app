@@ -53,10 +53,4 @@ npm start
 ## スクリプト
 
 - `npm start` - 開発サーバーを起動
-- `npm run build` - 本番用ビルドを作成
 - `npm test` - テストを実行
-- `npm eject` - Create React Appの設定を展開
-
-## ライセンス
-
-MIT
