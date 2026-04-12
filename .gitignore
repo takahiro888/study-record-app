@@ -1,0 +1,23 @@
+# 依存関係
+node_modules/
+
+# ビルド出力
+build/
+dist/
+
+# ログファイル
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# エディタ設定
+.DS_Store
+.vscode/
+.idea/
+
+# 環境変数
+.env
+.env.local
+
+# パッケージロックファイル（チーム開発では含めることもあります）
+package-lock.json
