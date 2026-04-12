@@ -24,6 +24,7 @@ export const StudyLogList = () => {
     setRecords(newRecords);
     setStudyTitle("");
     setStudyTime(0);
+    setError("");
   };
 
   const totalTime = records.reduce((total, record) => {
