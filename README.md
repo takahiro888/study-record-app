@@ -49,8 +49,3 @@ npm start
 - React 19.0.0
 - React DOM 19.0.0
 - React Scripts 5.0.0
-
-## スクリプト
-
-- `npm start` - 開発サーバーを起動
-- `npm test` - テストを実行
